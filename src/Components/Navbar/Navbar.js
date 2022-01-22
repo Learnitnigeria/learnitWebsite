@@ -10,6 +10,7 @@ import Blog from '../Blog/Blog'
 import About from '../About/About'
 import RegistrationModal from '../RegistrationModal/RegistrationModal'
 import ContactModal from '../ContactModal/ContactModal'
+import Project from '../Project/Project'
 function Navbar() {
     return (
         <>
@@ -29,8 +30,12 @@ function Navbar() {
                            
                             <li className="nav-item">
                                 <Link className="nav-link" to="/services">Services</Link>
-
                             </li>
+
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/project">Projects</Link>
+                            </li>
+
                             <li className="nav-item">
                                 <Link className="nav-link" to="/technology">Our Technolgogy</Link>
                             </li>
@@ -60,6 +65,7 @@ function Navbar() {
           <Route path="/technology" element={<Technologies/>}></Route>
           <Route path="/blog" element={<Blog/>}></Route>
           <Route path="/about" element={<About/>}></Route>
+          <Route path="/project" element={<Project/>}></Route>
         </Routes>
         </>
     )
